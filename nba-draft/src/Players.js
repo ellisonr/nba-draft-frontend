@@ -28,7 +28,7 @@ class Players extends Component {
             )
         })
         return (
-            <div>
+            <div className="print-area">
                 {allPlayers}
             </div>
         );
