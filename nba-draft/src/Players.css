@@ -1,0 +1,14 @@
+.players{
+    background: red;
+    width: 150px;
+    height: 150px;
+}
+
+.playersDetails{
+    font-size: 20px;
+    font-weight: heavy;
+}
+
+.playersDetails2{
+    font-size: 15px;
+}
