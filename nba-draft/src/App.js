@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { Redirect, Route, Switch } from 'react-router-dom';
 import './App.css';
-import CreatePlayer from './CreatePlayer';
-import DeletePlayer from './DeletePlayer';
-import UpdatePlayer from './UpdatePlayer';
-import Nav from './Nav'
-import Players from './Players';
-import Player from './Player'
+import CreatePlayer from './CreatePlayer/CreatePlayer';
+import DeletePlayer from './DeletePlayer/DeletePlayer';
+import UpdatePlayer from './UpdatePlayer/UpdatePlayer';
+import Nav from './Nav/Nav'
+import Players from './Players/Players';
+import Player from './Player/Player'
 
 class App extends Component {
   render() {
