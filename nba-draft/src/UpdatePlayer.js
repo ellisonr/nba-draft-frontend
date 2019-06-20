@@ -3,19 +3,19 @@ import './UpdatePlayer.css';
 import axios from 'axios';
 
 class UpdatePlayer extends Component {
-handleChange = e => {
-    e.preventDefault();
-    this.setState({
-        [e.target.name]: e.target.value
-    })
-}
+    handleChange = e => {
+        e.preventDefault();
+        this.setState({
+            [e.target.name]: e.target.value
+        })
+    }
     
-handleSubmit = e => {
-    e.preventDefault();
-    axios.put('http://localhost:8080/api/players', this.state)
-    .then(res => console.log(res))
-    .catch(err => console.log(err))
-}
+    handleSubmit = e => {
+        e.preventDefault();
+        axios.put('http://localhost:8080/api/players', this.state)
+        .then(res => console.log(res))
+        .catch(err => console.log(err))
+    }
 
     render() {
         return (

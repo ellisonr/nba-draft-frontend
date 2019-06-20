@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 import axios from 'axios';
 import './Players.css'
 
@@ -21,9 +22,9 @@ class Players extends Component {
         let allPlayers = this.state.players.map((players, index) => {
             return (
                 <div className="players" key={index}>
-                    <p className="playersDetails">Name: {players.name}</p>
-                    <p className="playersDetails2">Age: {players.age}</p>
-                    <p className="playersDetails2">College: {players.college}</p>
+                    <Link to={'/players/'+ players.name}>
+                    <p className="playersDetails">{players.name}</p>
+                    </Link>
                 </div>
             )
         })
