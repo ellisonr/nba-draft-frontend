@@ -6,6 +6,7 @@ import DeletePlayer from './DeletePlayer';
 import UpdatePlayer from './UpdatePlayer';
 import Nav from './Nav'
 import Players from './Players';
+import Player from './Player'
 
 class App extends Component {
   render() {
@@ -18,6 +19,7 @@ class App extends Component {
         <Route path='/create' component={CreatePlayer} />
         <Route path='/update' component={UpdatePlayer} />
         <Route path='/delete' component={DeletePlayer} />
+        <Route path='/show/:name' render={routerProps => (<Player{...routerProps}{...this.state}/>)}/>
       </Switch>
     </div>
   );

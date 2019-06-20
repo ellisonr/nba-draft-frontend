@@ -22,7 +22,7 @@ class Players extends Component {
         let allPlayers = this.state.players.map((players, index) => {
             return (
                 <div className="players" key={index}>
-                    <Link to={'/players/'+ players.name}>
+                    <Link to={'/show/'+ players.name}>
                     <p className="playersDetails">{players.name}</p>
                     </Link>
                 </div>
